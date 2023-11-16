@@ -13,5 +13,6 @@
 
 .main-container {
   background-color: rgb(46, 39, 51);
+  background-color: rgba(255, 228, 196, 0.2);
   padding: 20px;
 }

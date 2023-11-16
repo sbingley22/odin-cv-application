@@ -1,0 +1,25 @@
+.experience {
+    background-color: rgb(55, 55, 55);
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.experience-single {
+    background-color: rgb(39, 39, 39);
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.experience-single form {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media(max-width: 1024px) {
+    .experience-single form {
+        grid-template-columns: 1fr;
+    }
+}

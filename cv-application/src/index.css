@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: bisque;
   background-color: #242424;
 
   font-synthesis: none;
@@ -35,6 +35,7 @@ body {
 h1 {
   font-size: 1.3rem;
   line-height: 1.1;
+  text-decoration: underline;
 }
 
 button {
@@ -48,6 +49,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: bisque;
 }
 
 button:hover {
@@ -80,4 +82,32 @@ form {
 
 label {
   margin-right: 10px;
+}
+
+input {
+  background-color: rgb(11, 11, 11);
+  color: bisque;
+}
+
+input:read-only {
+  background-color: rgb(55, 55, 55);
+  border: 0;
+}
+
+input:read-only:hover {
+  cursor: not-allowed;
+}
+
+textarea {
+  background-color: rgb(11, 11, 11);
+  color: bisque;
+}
+
+textarea:read-only {
+  background-color: rgb(55, 55, 55);
+  border: 0;
+}
+
+textarea:read-only:hover {
+  cursor: not-allowed;
 }

@@ -32,25 +32,14 @@ export default function Info({ info, setInfo }) {
             <h1>User Contact Details</h1>
             <form>
                 <label htmlFor="info-name">Name: </label>
-                {info.editable ?
-                    <input type="text" name="info-name" id="info-name" value={info.name} onChange={handleNameChange} />
-                    :
-                    <h3>{info.name}</h3>
-                }
+                <input type="text" name="info-name" id="info-name" value={info.name} onChange={handleNameChange}
+                    readOnly={!info.editable} />
 
                 <label htmlFor="info-email">Email: </label>
-                {info.editable ?
-                    <input type="email" name="info-email" id="info-email" value={info.email} onChange={handleEmailChange} />
-                    :
-                    <h3>{info.email}</h3>
-                }
+                <input type="email" name="info-email" id="info-email" value={info.email} onChange={handleEmailChange} readOnly={!info.editable} />
 
                 <label htmlFor="info-phone">Phone: </label>
-                {info.editable ?
-                    <input type="tel" name="info-phone" id="info-phone" value={info.phone} onChange={handlePhoneChange} />
-                    :
-                    <h3>{info.phone}</h3>
-                }
+                <input type="tel" name="info-phone" id="info-phone" value={info.phone} onChange={handlePhoneChange} readOnly={!info.editable} />
             </form>
 
             <button type="submit" id="info-submit-button" onClick={onSubmit}>
